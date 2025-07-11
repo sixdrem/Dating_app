@@ -10,6 +10,10 @@ import likeRoutes from './routes/like.routes.js';
 import path from 'path';
 import fs from 'fs';
 import morgan from 'morgan';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 dotenv.config();
 const app = express();
